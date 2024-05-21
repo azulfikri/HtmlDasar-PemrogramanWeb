@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Kompleks</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+        th {
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tfoot th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- sama seperti pada tabel yang sederhana, bedanya pada tabel kompleks ini
+         terdapat atribut rowspan dan colspan, dimana
+         colspan: untuk menggabungkan beberapa kolom menjadi satu.
+         rowspan: untuk menggabungkan beberapa baris menjadi satu.
+         ketika kita ingin menggabungkan beberapa kolom atau baris, maka tuliskan jumlah yang ingin digabungkan pada valuenya -->
+    <h1>Tabel Kompleks</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Nama</th>
+                <th colspan="2">Detail</th>
+                <th rowspan="2">Kota</th>
+            </tr>
+            <tr>
+                <th>Usia</th>
+                <th>Profesi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Zulfikri</td>
+                <td>22</td>
+                <td>FullStack Developer</td>
+                <td>Pamekasan</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Huda</td>
+                <td>20</td>
+                <td>Cyber Security</td>
+                <td>Bandung</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vira</td>
+                <td>25</td>
+                <td>Desainer</td>
+                <td>Surabaya</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">Jumlah data: 3</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

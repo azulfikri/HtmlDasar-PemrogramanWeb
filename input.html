@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Type HTML</title>
+    <style>
+        h1 {
+            color: maroon;
+        }
+        h3 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <h1>Macam Macam Input di HTML</h1>
+    <form action="#" method="post">
+        <h3>Input type Text:</h3>
+        <label for="teks">Text:</label><br>
+        <input type="text" name="teks" id="teks" placeholder="Nama" required>
+        <br>
+
+        <h3>Input type Password:</h3>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="Password" minlength="8" maxlength="12" required>
+        <br>
+
+        <h3>Input type Number:</h3>
+        <label for="number">Number:</label><br>
+        <input type="number" name="number" id="number" min="0" max="100">
+        <br>
+
+        <h3>Input type Email:</h3>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="contoh@gmail.com" required>
+        <br>
+
+        <h3>Input type Url:</h3>
+        <label for="url">Url:</label><br>
+        <input type="url" name="url" id="url" placeholder="https://contoh.com">
+        <br>
+
+        <h3>Input type Date:</h3>
+        <label for="date">Date:</label><br>
+        <input type="date" name="date" id="date">
+        <br>
+
+        <h3>Input type Time:</h3>
+        <label for="time">Time:</label><br>
+        <input type="time" name="time" id="time">
+        <br>
+
+        <h3>Input type DateTime Local:</h3>
+        <label for="datetime-local">DateTime Local:</label><br>
+        <input type="datetime-local" name="datetime-local" id="datetime-local">
+        <br>
+
+        <h3>Input type Month:</h3>
+        <label for="month">Month:</label><br>
+        <input type="month" name="month" id="month">
+        <br>
+
+        <h3>Input type Week:</h3>
+        <label for="week">Week:</label><br>
+        <input type="week" name="week" id="week">
+        <br>
+
+        <h3>Input type Color:</h3>
+        <label for="color">Color:</label><br>
+        <input type="color" name="color" id="color">
+        <br>
+
+        <h3>Input type Checkbox:</h3>
+        <label>Hobi:</label>
+        <input type="checkbox" id="ngoding" name="hobby" value="ngoding" checked>
+        <label for="ngoding">Ngoding</label>
+        <input type="checkbox" id="sport" name="hobby" value="sport">
+        <label for="sport">Olahraga</label>
+        <input type="checkbox" id="fishing" name="hobby" value="fishing">
+        <label for="fishing">Memancing</label>
+        <br>
+
+        <h3>Input type Radio:</h3>
+        <!-- Input Radio -->
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label>
+        <br>
+
+        <h3>Input type File:</h3>
+        <!-- Input File -->
+        <label for="file">Unggah File:</label>
+        <input type="file" id="file" name="file">
+        <br>
+
+        <h3>Input type Telepon:</h3>
+        <!-- Input Tel -->
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" pattern="(62)[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="xxxx-xxxx-xxxx">
+        <br>
+
+        <h3>Input type Submit:</h3>
+        <!-- Input Submit -->
+        <input type="submit" value="Kirim"><br>
+        <!-- untuk input tipe submit, lebih direkomendasikan dengan tag button -->
+        <button type="submit">Submit</button>
+
+        <h3>Input type Reset:</h3>
+        <input type="reset" value="Reset"><br>
+        <!-- untuk input tipe reset, lebih direkomendasikan dengan tag button -->
+        <button type="reset">reset</button>
+
+        <h3>Input type Button:</h3>
+        <!-- input type button juga direkomendasikan pakai tag button -->
+        <button type="button">Klik</button><br>
+
+        <h3>Input type Hidden:</h3>
+        <!-- input hidden -->
+        <input type="hidden" name="user_id" value="sembunyi"><br>
+
+        <h3>Input type Range:</h3>
+        <!-- input range -->
+        <label for="nilai_ujian">Nilai Ujian :</label>
+        <!-- usahakan ada min dan max nya -->
+        <input type="range" name="nilai_ujian" id="nilai_ujian" min="0" max="100" value="50" step="5"><br>
+
+        <h3>Input type Searching:</h3>
+        <!-- input type search -->
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search">
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Sederhana</title>
+    <style>
+       /* Internal CSS untuk memberikan border pada tabel */
+       table {
+            width: 100%;
+            border-collapse: collapse; /* Menggabungkan border sel */
+        }
+
+        th, td {
+            border: 1px solid black; /* Border untuk setiap sel */
+            padding: 8px; /* Padding di dalam sel */
+        }
+
+        th {
+            text-align: center; /* Perataan teks dalam sel */
+            background-color: #f2f2f2; /* Warna latar belakang untuk header tabel */
+        }
+        caption {
+            font-weight: bold; /* untuk ketebalan teks */
+            margin-bottom: 5px; /* untuk jarak caption dengan tabel */
+        }
+    </style>
+</head>
+<body>
+     <!-- table di html digunakan untuk membuat tabel
+         Ada banyak tag yang digunakan untuk membuat table:
+         Tag table, digunakan untuk membuat tabel, 
+         Tag tr untuk membuat row / baris,
+         Tag th untuk membuat kolom header table, 
+         Tag td untuk membuat kolom isi table,
+         Tag caption untuk keterangan table,
+         Tag thead, untuk grup header table,
+         Tag tbody, untuk grup isi table, 
+         Tag tfoot, untuk grup footer table
+         untuk memberikan border dan style lainnya pada tabel, 
+         direkomendasikan untuk menulis kodenya di bagian kode css, baik secara internal
+         maupun eksternal, dan tidak direkomendasikan menulis secara inline, seperti pada contoh diatas -->
+    <h1>Tabel Sederhana</h1>
+    <table>
+        <caption>Data Software Engineer</caption>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Usia</th>
+                <th>Kota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gopal</td>
+                <td>23</td>
+                <td>Jakarta</td>
+            </tr>
+            <tr>
+                <td>Satrio</td>
+                <td>21</td>
+                <td>Bandung</td>
+            </tr>
+            <tr>
+                <td>Salsabila</td>
+                <td>20</td>
+                <td>Pamekasan</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
